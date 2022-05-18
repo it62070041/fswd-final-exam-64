@@ -1,0 +1,15 @@
+{
+	"name": "FsWD exam web",
+	"dockerComposeFile": [
+		"../../docker-compose.yml"
+	],
+	"service": "fswd_web",
+	"shutdownAction": "none",
+	"workspaceFolder": "/workspace/web",
+	"settings": {},
+	"extensions": [
+		"github.copilot",
+		"dbaeumer.vscode-eslint"
+	],
+	"remoteUser": "node"
+}

@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  fswd_api:
+    image: node:16-bullseye
+    environment:
+      TZ: Asia/Bangkok
+    volumes:
+      - ./api:/workspace/api:cached
+      - ~/.ssh:/home/node/.ssh:cached
+      - ~/.gitconfig:/home/node/.gitconfig:cached
+      - ~/.gnupg:/home/node/.gnupg:cached
+    container_name: fswd_api
+    hostname: fswd_api
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    networks:
+      - gateway
+      - fswd
+  fswd_web:
+    image: node:16-bullseye
+    environment:
+      TZ: Asia/Bangkok
+    volumes:
+      - ./web:/workspace/web:cached
+      - ~/.ssh:/home/node/.ssh:cached
+      - ~/.gitconfig:/home/node/.gitconfig:cached
+      - ~/.gnupg:/home/node/.gnupg:cached
+    container_name: fswd_web
+    hostname: fswd_web
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    networks:
+      - gateway
+      - fswd
+
+networks:
+  gateway:
+    external: true
+  fswd:
+    external: true

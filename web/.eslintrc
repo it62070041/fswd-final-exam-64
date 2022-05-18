@@ -1,0 +1,19 @@
+{
+  "extends": "iinitz/ts-react",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "no-console": 0,
+    "max-len": 0,
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_id"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-misused-promises": 0
+  }
+}

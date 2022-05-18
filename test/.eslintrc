@@ -1,0 +1,33 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:cypress/recommended",
+    "iinitz/ts-base"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "cypress"
+  ],
+  "env": {
+    "cypress/globals": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "no-console": 0,
+    "max-len": 0,
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_id"
+        ]
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "cypress/no-async-tests": 0
+  }
+}

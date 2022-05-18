@@ -1,0 +1,16 @@
+.tweet {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tweet:hover {
+  background-color: var(--background-hover-color);
+}
+
+.tweet .tweet-retweet {
+  color: var(--secondary-text-color);
+  margin-bottom: 8px;
+  margin-left: 64px;
+}

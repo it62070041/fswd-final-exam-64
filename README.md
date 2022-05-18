@@ -1,5 +1,9 @@
 # FsWD 64 - Final exam
 
+## Demo
+- [Twitter clone](https://fswd64.devnss.com)
+- [GraphQL playground](https://api.fswd64.devnss.com/graphql)
+
 ## Requirements
 - Login page (/login)
   - Login with username and password
@@ -18,6 +22,28 @@
   - Unfollow button if user followed this profile
   - Tweet display text, retweets count, likes count and user info
   - Tweet actions retweet and like
+
+## Start development
+- Pull code from this repo
+- Create new branch with name `feat/YOUR_STUDENT_ID`
+### web
+- Create `.env` file from `.env.example`
+- Install dependencies
+- Start development server using command `yarn start`
+- Web should run on port `3000`
+- Implement all comment start with `WEB: Implement`
+### api
+- Create `.env` file from `.env.example`
+- Install dependencies
+- Start development server useing command `yarn dev`
+- Initial database data using command `yarn seed`
+- API should run on port `3001`
+- Implement all comment start with `API: Implement`
+### test
+- Install dependencies
+- Start testing using command `yarn test`
+- After Cypress app running click `final-exam.spec.ts`
+- Cypress will start Chrome fro testing all test case
 
 ## Test cases
 - Login page
@@ -39,18 +65,13 @@
   - Feed display Tweets correctly
   - Tweet content, user info and actions display correctly
   - Retweet success display new tweet correctly
-  - Retweet content, user info and actions display correctly
   - Like success display tweets correctly
   - Unlike success display tweets correctly
-  - Link on avatar, fullname, username and fullname retweeted redirect to user Profile page correctly
 - Profile page
   - Profile info display correctly
-  - Follow success display Unfollow button correctly
-  - Unfollow success display Follow button correctly
+  - Follow/Unfollow success display correctly
   - User tweets display correctly
   - Tweet content, user info and actions display correctly
   - Retweet success display new tweet correctly
-  - Retweet content, user info and actions display correctly
   - Like success display tweets correctly
   - Unlike success display tweets correctly
-  - Link on avatar, fullname, username and fullname retweeted redirect to user Profile page correctly

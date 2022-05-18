@@ -1,0 +1,7 @@
+{
+  "watch": [
+    "src"
+  ],
+  "ext": "ts",
+  "exec": "ts-node-dev -r dotenv/config src/app.ts"
+}

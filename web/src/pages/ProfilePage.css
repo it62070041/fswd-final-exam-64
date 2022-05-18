@@ -1,0 +1,74 @@
+.profile-title {
+  margin-bottom: 0;
+  margin-left: 16px;
+}
+
+.profile-tweet-count {
+  margin-bottom: 8px;
+  margin-left: 16px;
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}
+
+.profile-root {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--secondary-text-color);
+}
+
+.profile-root .hilight {
+  color: var(--primary-text-color);
+  font-weight: bold;
+}
+
+.profile-root .profile-cover {
+  min-height: 160px;
+  background-color: var(--secondary-text-color);
+}
+
+.profile-root .profile-avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: -80px;
+  padding: 0 16px;
+}
+
+.profile-root .profile-avatar .profile-actions button {
+  font-size: 1rem;
+}
+
+.profile-root .profile-avatar .profile-actions .profile-unfollow-button {
+  border: 2px solid var(--red-color);
+}
+
+.profile-root .profile-info {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.profile-root .profile-info .profile-fullname {
+  margin-bottom: 0;
+}
+
+.profile-root .profile-info .profile-username {
+  margin-bottom: 8px;
+}
+
+.profile-root .profile-info .profile-timestamp {
+  margin-bottom: 8px;
+}
+
+.profile-root .profile-stat {
+  display: flex;
+}
+
+.profile-root .profile-stat *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.profile-tweets {
+  overflow-y: auto;
+}

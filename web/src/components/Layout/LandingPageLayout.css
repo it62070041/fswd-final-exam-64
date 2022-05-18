@@ -1,0 +1,22 @@
+.landing-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.landing-page header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  background-color: var(--blue-color);
+}
+
+.landing-page main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

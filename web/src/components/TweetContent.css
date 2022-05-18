@@ -1,0 +1,53 @@
+.tweet-root {
+  display: flex;
+}
+
+.tweet-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 16px;
+}
+
+.tweet-info>* {
+  color: var(--secondary-text-color);
+}
+
+.tweet-info>*:not(:last-child) {
+  margin-right: 8px;
+}
+
+.tweet-fullname {
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+.tweet-text {
+  margin: 8px 0;
+}
+
+.tweet-actions>*:not(:last-child) {
+  margin-right: 16px;
+}
+
+.tweet-actions button {
+  font-size: 14px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: var(--secondary-text-color);
+}
+
+.tweet-actions button:hover {
+  opacity: 1;
+}
+
+.tweet-actions button.tweet-retweet-button:hover,
+.tweet-actions button.tweet-retweet-button.tweet-retweeted {
+  color: var(--green-color);
+}
+
+.tweet-actions button.tweet-like-button:hover,
+.tweet-actions button.tweet-like-button.tweet-liked {
+  color: var(--pink-color);
+}

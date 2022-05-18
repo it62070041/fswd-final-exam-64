@@ -1,0 +1,17 @@
+schema: http://localhost:3001/graphql
+generates:
+  ./generated/graphql.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+    config:
+      declarationKind: interface
+      defaultScalarType: unknown
+      typesPrefix: I
+      enumPrefix: false
+      namingConvention:
+        enumValues: change-case-all#constantCase
+        transformUnderscore: true
+hooks:
+  afterAllFileWrite:
+    - eslint --fix

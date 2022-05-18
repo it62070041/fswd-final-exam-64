@@ -1,0 +1,7 @@
+.feed-title {
+  margin-left: 16px;
+}
+
+.feed-tweets {
+  overflow-y: auto;
+}
