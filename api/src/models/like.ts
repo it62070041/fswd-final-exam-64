@@ -1,4 +1,5 @@
 import { model, Schema } from 'mongoose'
+import { composeMongoose } from 'graphql-compose-mongoose'
 
 import { ILike } from '../types/models'
 
@@ -23,3 +24,4 @@ const LikeSchema = new Schema<ILike>(
 export const LikeModel = model<ILike>('Like', LikeSchema)
 
 // API: Implement LikeTC here
+export const LikeTC = composeMongoose(LikeModel)
