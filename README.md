@@ -1,8 +1,8 @@
 # FsWD 64 - Final exam
 
 ## Student
-#### Student ID: 
-#### Name (TH): 
+#### Student ID: iinitz
+#### Name (TH): iinitz
 
 ## Demo
 - [Twitter clone](https://fswd64.devnss.com)
