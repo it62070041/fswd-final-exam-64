@@ -1,5 +1,9 @@
 # FsWD 64 - Final exam
 
+## Student
+#### Student ID: 
+#### Name (TH): 
+
 ## Demo
 - [Twitter clone](https://fswd64.devnss.com)
 - [GraphQL playground](https://api.fswd64.devnss.com/graphql)
